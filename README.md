@@ -1,2 +1,3 @@
-# 30-days-of-ink!
+# 30 days with ink! and Sherlock
 
+<img src="./ink_krita.jpg"/>
