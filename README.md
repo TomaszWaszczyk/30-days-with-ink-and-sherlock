@@ -1,3 +1,4 @@
-# 30 Days with ink! and Sherlock
+
+> Create some sort of order in apparent chaos.
 
 <img src="./ink_krita.jpg"/>
