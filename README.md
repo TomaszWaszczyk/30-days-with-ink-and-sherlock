@@ -7,3 +7,8 @@
 
 
 <!-- https://github.com/paritytech/awesome-ink -->
+
+
+https://github.com/paritytech/awesome-ink
+
+https://github.com/paritytech/ink-examples
