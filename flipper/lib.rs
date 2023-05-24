@@ -2,6 +2,8 @@
 
 #[ink::contract]
 mod flipper {
+    use ink::storage::{traits::ManualKey, Mapping};
+
 
     /// Defines the storage of your contract.
     /// Add new fields to the below struct in order
@@ -10,13 +12,17 @@ mod flipper {
     pub struct Flipper {
         /// Stores a single `bool` value on the storage.
         value: bool,
+        balances: Mapping<AccountId, Balance, ManualKey<123>>,
     }
 
     impl Flipper {
         /// Constructor that initializes the `bool` value to the given `init_value`.
         #[ink(constructor)]
         pub fn new(init_value: bool) -> Self {
-            Self { value: init_value }
+            let mut instance = Self::default();
+
+            instance
+            // Self { value: init_value }
         }
 
         /// Constructor that initializes the `bool` value to `false`.
