@@ -18,11 +18,10 @@ mod flipper {
     impl Flipper {
         /// Constructor that initializes the `bool` value to the given `init_value`.
         #[ink(constructor)]
-        pub fn new(init_value: bool) -> Self {
-            let mut instance = Self::default();
+        pub fn new(_init_value: bool) -> Self {
+            let instance = Self::default();
 
             instance
-            // Self { value: init_value }
         }
 
         /// Constructor that initializes the `bool` value to `false`.
